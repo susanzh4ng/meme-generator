@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  font-family: 'Karla', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card--favorite {
+  background-color: #672280;
+  height: 50px;
+  width: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*HEADER COMPONENT*/
+.headerSection {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #ffffff;
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  padding: 15px 20px;
+}
+.headerLogo {
+  height: 60%;
+  margin-right: 6px;
+}
+.title {
+  font-weight: 700;
+  font-size: 20.7482px;
+  letter-spacing: -0.1em;
+  margin-right: auto; /*pushes subheading to the right*/
+}
+.subheading {
+  font-weight: 500;
+  font-size: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+/*MEME COMPONENT*/
+main {
+  padding: 36px;
+}
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+input {
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+button {
+  grid-column: 1 / -1; /*button will span from beginning to end of row*/
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+.memeImg {
+  max-height: 280px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
